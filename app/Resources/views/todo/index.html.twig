@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<br/><br/><br/>
+<h3 class="page-header">TO DO lists</h3>
+
+
+<table class="table table-bordered ">
+  <thead>
+    <tr>
+      <th scope="col">to do</th>
+      <th scope="col">operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Larry the Bird</td>
+      <td>
+      <button class="btn btn-info">view</button>
+      <button class="btn btn-success">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
