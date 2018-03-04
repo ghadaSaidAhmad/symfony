@@ -13,14 +13,16 @@
     </tr>
   </thead>
   <tbody>
+  {% for todo in  todos%}
     <tr>
-      <td>Larry the Bird</td>
+      <td>{{todo.name}}</td>
       <td>
-      <button class="btn btn-info">view</button>
-      <button class="btn btn-success">Edit</button>
-      <button class="btn btn-danger">Delete</button>
+      <a href="todo/details/{{todo.id}}" class="btn btn-info">view</a>
+      <a href="todo/edit/{{todo.id}}" class="btn btn-success">Edit</a>
+      <a href="todo/delete/{{todo.id}}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
+    {%endfor%}
   </tbody>
 </table>
 {% endblock %}
